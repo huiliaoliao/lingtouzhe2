@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/clear.css"><!--清除默认样式-->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" id="nav_main">
+    <div class="container">
+    </div>
+</nav>
+
+
+<div id="wrap">
+    <section class="page page1">
+
+    </section>
+    <section class="page page2">
+        <img src="img/download/lx_dt.png"  class="img-responsive" alt="">
+        <div class="contact">
+            <p>联系我们</p>
+            <el-row :gutter="20">
+                <el-col :span="10" :offset="4" class="home">
+                    <el-row :gutter="10">
+                        <el-col :span="4">
+                            <ul>
+                                <li v-for="(home,index) in homeList" :key="home.index"> {{ home.li }} </li>
+                            </ul>
+                        </el-col>
+                        <el-col :span="4">
+                            <ul>
+                                <li v-for="(product,index) in productList" :key="product.index"> {{ product.li }} </li>
+                            </ul>
+                        </el-col>
+                        <el-col :span="4">
+                            <ul>
+                                <li v-for="(service,index) in serviceList" :key="service.index"> {{ service.li }} </li>
+                            </ul>
+                        </el-col>
+                        <el-col :span="4">
+                            <ul>
+                                <li v-for="(about,index) in aboutList" :key="about.index"> {{ about.li }} </li>
+                            </ul>
+                        </el-col>
+                        <el-col :span="4">
+                            <ul>
+                                <li v-for="(download,index) in downloadList" :key="download.index"> {{ download.li }} </li>
+                                <li>
+                                    <img src="../../static/img/download/qr_code.png"  class="img-responsive" alt="">
+                                </li>
+                            </ul>
+                        </el-col>
+                    </el-row>
+
+                </el-col>
+                <el-col :span="10" class="address">
+                    <ul class="address">
+                        <li v-for="(address,index) in addressList" :key="address.index"> {{address.li }} </li>
+                    </ul>
+                </el-col>
+            </el-row>
+        </div>
+    </section>
+</div>
+<ul class="menu"></ul>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

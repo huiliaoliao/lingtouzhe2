@@ -1,0 +1,6 @@
+.page1 {
+    position: relative;
+    height: 100%;
+    background: url(../img/download/banner.png) no-repeat;
+    /*background-size: 100% 100%;*/
+}

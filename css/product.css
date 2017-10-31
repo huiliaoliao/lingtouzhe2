@@ -1,0 +1,130 @@
+/*产品页*/
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: #f2f4f8;
+    min-width: 1000px;
+    overflow: hidden;
+}
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.logo {
+    position: fixed;
+    top: 9px;
+    left: 50px;
+}
+.nav-list {
+    float: right; // width: 870px;
+    /*padding-right: 100px;*/
+    padding-left: 230px;
+    /*min-width: 400px;*/
+    overflow: hidden;
+}
+.nav-list>li {
+    float: left;
+    color: #2A3142;
+    height: 70px;
+    width: 110px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+.nav-list>li:hover {
+    background: rgba(200, 200, 200, 0.15);
+    border-bottom: 2px solid  #8AA9CC;
+}
+.search {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/search-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.custom {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/custom-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.analyse {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/analyse-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.manage {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/manage-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.file {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/file-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.work {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/work-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.alarm {
+    position: relative;
+    height: 100%;
+    background: url(../img/product/alarm-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.contentBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -560px;
+    margin-top: -452px;
+    width: 1120px;
+    height: 903px;
+}
+.text {
+    width: 310px;
+    height: 340px;
+    position: absolute;
+    background: rgba(255, 255, 255, .4);
+    padding: 50px 45px;
+    color: #00727d;
+    box-sizing: border-box;
+}
+.text p {
+    font-size: 36px;
+}
+.text div {
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+.imgRight {
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    cursor: pointer;
+}
+.imgRight:hover {
+    transition: all 1s ease;
+    transform: rotate(10deg); // transform: rotate(45deg) translate(50px, 100px) scale(1.2);
+}
+.imgLeft {
+    position: absolute;
+    left: 0;
+    top: 226px;
+    cursor: pointer;
+}
+.imgLeft:hover {
+    transition: all 1s ease;
+    transform: rotate(-10deg); // transform: rotate(-360deg) translate(50px, 100px) scale(1.2);
+}
